@@ -3,7 +3,8 @@ import {TouchableOpacity,Text,Image,StyleSheet,Alert} from 'react-native'
 
 export const BackButton=()=>{
     return(
-        <TouchableOpacity style={Style.backStyle}>
+        <TouchableOpacity style={Style.backStyle}
+        onPress={()=>Alert.alert("Back Button Pressed")}>
             <Image 
             source={require('./footerImages/backButton.png')}/>
         </TouchableOpacity>
