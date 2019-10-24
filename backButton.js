@@ -12,13 +12,12 @@ export const BackButton=()=>{
 }
 const Style=StyleSheet.create({
     backStyle:{
-        backgroundColor:"#FB9701",
         width:30,
         height:30,
         alignItems:'center',
         borderRadius:50,
-        marginTop:10,
-        top:30,
+       marginTop:10,
+        top:10,
         left:5,
         position:'absolute',
         marginLeft:20

@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,TouchableOpacity,StyleSheet,Image,Alert} from 'react-native'
+import {View,TouchableOpacity,StyleSheet,Image,Alert,Dimensions} from 'react-native'
 
 export  const TabBar = () =>{
    
@@ -43,7 +43,7 @@ const Style=StyleSheet.create({
         width:"100%",
         alignItems:'center',
         justifyContent:'space-around',
-        marginBottom:20
+        
     },
     iconsStyle:{
         color:'gray',

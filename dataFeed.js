@@ -1,12 +1,14 @@
 import React from 'react';
-import {Text,ScrollView,StyleSheet,View} from 'react-native';
+import {Text,SafeAreaView,StyleSheet,View} from 'react-native';
 import PrizeViews from './prizeViews'
-import Description, { Rules } from './rulesAndInfo';
-
+import { TabBar } from './tabBar'
+import {Header} from './header'
 export const Roads = () => {
   return (
-      <ScrollView >
+      <SafeAreaView style={{backgroundColor:"#FB9701"}}>
+          <Header/>
     <View style={Styles.dataStyle}>
+        
         <View>
         <Text style={Styles.roadTextStyle}>Roads less travelled</Text>
         <Text style={Styles.lightTextStyle}>1 day left</Text>
@@ -16,10 +18,8 @@ export const Roads = () => {
         <Text style={Styles.prizeStyle}>$ 220</Text>
         </View>
     </View>
-    <PrizeViews/>
-    <Description/>
-    <Rules/>
-    </ScrollView>
+    
+    </SafeAreaView>
   );
 };
 
